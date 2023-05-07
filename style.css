@@ -40,7 +40,7 @@ body{
     /*? the outline-offset att works for the area bettw outline and cont */
     outline-offset: 20px;
 }
-/*! also i need to add a mediaquery for diff page sizes */
+/*! also i need to add a mediaquery for diff page sizes */ 
 .cont{
     /* this is for explanation section */
     height: 40vh;
