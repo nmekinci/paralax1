@@ -1,36 +1,49 @@
+/* i imported that script from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 *{
+    /* the universal selector and changed browser def */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    /* all of fonts will be same */
     font-family: 'Lato', sans-serif;
 }
 #para1 {
+    /* parallax background  */
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./img/bg.jpg);
     background-attachment:fixed;
     background-size:cover;
     background-blend-mode:center;
     text-align: center;
-    height: 1000px;
+    height: 100vh;
 }
 #main{
-    padding: 350px;
+    /* the main logo area  */
+    margin: auto;
+    padding: 43vh 0;
 }
 #main h2{
+    /* nested area for bg color and outline */
     font-size: 5rem;
     color: white;
-    border: 10px solid rgb(166,76,166);
+    /*! i need to change the px unit to rem */
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    border-style: inset;
     display: inline;
-    
-    /* outline: yellowgreen solid 10px; */
+    height: 10rem;
+    /* i gave the bg a bit opacity and diff color */
+    background-color: rgba(0, 255, 255, 0.5);
+    padding: 10px;
+    outline: rgb(166,76,166) inset 15px;
+    /*? the outline-offset att works for the area bettw outline and cont */
+    outline-offset: 20px;
 }
+/*! also i need to add a mediaquery for diff page sizes */
 .cont{
-    height: 250px;
+    /* this is for explanation section */
+    height: 40vh;
     background-color: rgb(241,241,241);
     /* border: 1px solid black; */
     padding: 30px 40px;
@@ -45,5 +58,4 @@ body{
 .cont span{
     /* color:rgb(102,102,102); */
     font-weight: bold;
-    
 }
