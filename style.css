@@ -10,21 +10,32 @@ body{
     /* all of fonts will be same */
     font-family: 'Lato', sans-serif;
 }
-#para1 {
+
+.para1 {
     /* parallax background  */
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./img/bg.jpg);
+    /* background-attachment:fixed;
+    background-size:cover;
+    background-blend-mode:center;
+    text-align: center;
+    height: 100vh; */
+}
+.para2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./img/bg2.jpg);
+}
+.para{
     background-attachment:fixed;
     background-size:cover;
     background-blend-mode:center;
     text-align: center;
     height: 100vh;
 }
-#main{
+.main{
     /* the main logo area  */
     margin: auto;
     padding: 43vh 0;
 }
-#main h2{
+.main h2{
     /* nested area for bg color and outline */
     font-size: 5rem;
     color: white;
@@ -40,22 +51,34 @@ body{
     /*? the outline-offset att works for the area bettw outline and cont */
     outline-offset: 20px;
 }
-/*! also i need to add a mediaquery for diff page sizes */ 
-.cont{
-    /* this is for explanation section */
-    height: 40vh;
-    background-color: rgb(241,241,241);
-    /* border: 1px solid black; */
-    padding: 30px 40px;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+.main img{
+    width: 25vw;
+    height: 10vh;
+    display: inline;
 }
+/*! also i need to add a mediaquery for diff page sizes */ 
+
 .cont h3{
-    color:rgb(102,102,102);
     font-size: 2rem;
     padding: 30px 0;
 }
-.cont span{
-    /* color:rgb(102,102,102); */
+.light{
+    background-color: rgb(241,241,241);
+    color:rgb(102,102,102);
+}
+.light span{
     font-weight: bold;
+}
+.dark {
+    background-color:rgb(102,102,102);
+    color: rgb(241,241,241);
+}
+.cont{
+    /* position relative it works for be together with para area */
+    position: relative;
+    
+    height: 30vh;
+    padding: 20px 40px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
