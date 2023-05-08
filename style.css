@@ -1,86 +1,98 @@
 /* i imported that script from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-*{
-    /* the universal selector and changed browser def */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  /* the universal selector and changed browser def */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    /* all of fonts will be same */
-    font-family: 'Lato', sans-serif;
+body {
+  /* all of fonts will be same */
+  font-family: "Lato", sans-serif;
 }
 
 .para1 {
-    /* parallax background  */
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./img/bg.jpg);
-    /* background-attachment:fixed;
+  /* parallax background  */
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./img/bg.jpg);
+  /* background-attachment:fixed;
     background-size:cover;
     background-blend-mode:center;
     text-align: center;*/
-    height: 100%; 
+  height: 100%;
 }
 .para2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./img/bg2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./img/bg2.jpg);
+  height: 80%;
+}
+.para3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./img/bg3.jpg);
+  height: 80%;
+}
+.para4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url(./img/bg4.jpg);
     height: 80%;
+  }
+.para {
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-blend-mode:center; */
+  text-align: center;
+  /*? i used height with vh unit but it didnt work well it wasnt responsive */
+  /* height: 100vh; */
 }
-.para{
-    background-attachment:fixed;
-    background-size:cover;
-    /* background-blend-mode:center; */
-    text-align: center;
-    /*? i used height with vh unit but it didnt work well it wasnt responsive */
-    /* height: 100vh; */
+.main {
+  /* the main logo area  */
+  margin: auto;
+  padding: 22% 0;
 }
-.main{
-    /* the main logo area  */
-    margin: auto;
-    padding: 22% 0;
+.main h2 {
+  /* nested area for bg color and outline */
+  font-size: 5rem;
+  color: white;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  display: inline;
+  height: 10rem;
+  /* i gave the bg a bit opacity and diff color */
+  background-color: rgba(0, 255, 255, 0.5);
+  padding: 1rem;
+  outline: rgb(166, 76, 166) inset 1rem;
+  /*? the outline-offset att works for the area bettw outline and cont */
+  outline-offset: 1rem;
 }
-.main h2{
-    /* nested area for bg color and outline */
-    font-size: 5rem;
-    color: white;
-    border-top-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
-    display: inline;
-    height: 10rem;
-    /* i gave the bg a bit opacity and diff color */
-    background-color: rgba(0, 255, 255, 0.5);
-    padding: 1rem;
-    outline: rgb(166,76,166) inset 1rem;
-    /*? the outline-offset att works for the area bettw outline and cont */
-    outline-offset: 1rem;
+.main img {
+  width: 25vw;
+  /* height: 10vh; */
+  margin: 6rem;
+  opacity: 0.7;
 }
-.main img{
-    width: 25vw;
-    /* height: 10vh; */
-    margin: 6rem;
-    opacity: 0.7;
-}
-/*! also i need to add a mediaquery for diff page sizes */ 
+/*! also i need to add a mediaquery for diff page sizes */
 
-.cont h3{
-    font-size: 2rem;
-    padding: 1.5rem 0;
+.cont h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
 }
-.light{
-    background-color: rgb(241,241,241);
-    color:rgb(102,102,102);
+.light {
+  background-color: rgb(241, 241, 241);
+  color: rgb(102, 102, 102);
 }
-.light span{
-    font-weight: bold;
+.light span {
+  font-weight: bold;
 }
 .dark {
-    background-color:rgb(102,102,102);
-    color: rgb(241,241,241);
+  background-color: rgb(102, 102, 102);
+  color: rgb(241, 241, 241);
 }
-.cont{
-    /* position relative it works for be together with para area */
-    position: relative;
-    /* display: block; */
-    /* height: 30vh; */
-    padding: 20px 40px;
-    letter-spacing: 0.1rem;
-    word-spacing: 0.2rem;
+.cont {
+  /* position relative it works for be together with para area */
+  position: relative;
+  /* display: block; */
+  /* height: 30vh; */
+  padding: 2rem 4rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
 }
